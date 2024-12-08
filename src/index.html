@@ -1,28 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | Ethan Bird Portfolio</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gzm1mxe.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html"><img src="images/birdicon.png" alt="Bird Icon" class="navbar-icon" /></a>
+          <ul class="navbar-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="case-study.html">CASE STUDY</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+          </ul>
+        </div>
+        <img src="images/wave.png" alt="Wave 1" class="wave-layer wave1" />
+        <img src="images/wave2.png" alt="Wave 2" class="wave-layer wave2" />
+        <img src="images/wave3.png" alt="Wave 3" class="wave-layer wave3" />
+      </nav>
+    </header>
 
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
+    <!-- Hero Section -->
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-left">
+            <h1 class="welcome">Welcome!</h1>
+            <h2 class="name">I'm Ethan <span class="lastname">Bird</span></h2>
+            <ul class="roles">
+              <li>Web Designer</li>
+              <li>Graphic Designer</li>
+              <li>Video Editor</li>
+              <li>3D Modeler</li>
+            </ul>
+          </div>
+          <div class="hero-right">
+            <img src="images/Me.png" alt="Ethan Bird" class="hero-image" />
+          </div>
+          <div class="hero-bottom">
+            <p>“Here to turn <span class="highlight">your</span> ideas into a stunning digital experience!”</p>
+          </div>
+        </div>
+      </section>
 
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+      <!-- Toolbox Section -->
+      <section class="toolbox">
+        <h2 class="section-title">My Toolbox</h2>
+        <div class="icons-container">
+          <img src="images/ps.png" alt="Photoshop" />
+          <img src="images/ai.png" alt="Illustrator" />
+          <img src="images/ae.png" alt="After Effects" />
+          <img src="images/pdf.png" alt="PDF" />
+          <img src="images/id.png" alt="InDesign" />
+          <img src="images/lr.png" alt="Lightroom" />
+          <img src="images/pr.png" alt="Premiere Pro" />
+          <img src="images/cad.png" alt="CAD" />
+          <img src="images/word.png" alt="Word" />
+          <img src="images/pp.png" alt="PowerPoint" />
+          <img src="images/excel.png" alt="Excel" />
+          <img src="images/vscode.png" alt="VS Code" />
+        </div>
+      </section>
 
-<body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+      <!-- Additional Header -->
+      <section class="get-started">
+        <h2 class="get-started-title">Let's Get <span class="highlight">STARTED</span></h2>
+        <a href="contact.html" class="connect-button">Click here to connect with me!</a>
+      </section>
+    </main>
 
-  <script type="module" src="./javascripts/main.js"></script>
-</body>
+    <!-- Footer -->
+    <footer>
+      <!-- Black background div -->
+      <div class="footer-bg"></div>
+
+      <!-- Wave footer -->
+      <img src="images/wave.png" alt="Wave Footer" class="wave-footer" />
+
+      <!-- Social media icons -->
+      <div class="social-media">
+        <img src="images/yt.png" alt="YouTube" />
+        <img src="images/ig.png" alt="Instagram" />
+        <img src="images/fb.png" alt="Facebook" />
+        <img src="images/twitter.png" alt="Twitter" />
+      </div>
+
+      <!-- Copyright text -->
+      <p>© Ethan Bird 2024 | <a href="mailto:ethanbird@mail.weber.edu">ethanbird@mail.weber.edu</a></p>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
