@@ -1,26 +1,24 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
-// Gradient Background
 body {
   background: linear-gradient(180deg, rgba(25, 62, 109, 0.4) 40%, rgba(51, 123, 135, 0.46) 100%);
   margin: 0;
   padding: 0;
 }
 
-// Navbar
 .navbar {
   font-family: "Aglet Mono VF", sans-serif;
-  font-weight: 700; /* Bold */
+  font-weight: 700;
   position: relative;
   background-color: transparent;
-  z-index: 10; /* Ensures navbar content stays on top */
+  z-index: 10;
   margin-bottom: 120px;
 
   .navbar-icon {
     height: 100px;
-    position: relative; /* Ensures it's layered above waves */
-    z-index: 10; /* Place above waves */
+    position: relative;
+    z-index: 10;
     margin-left: -60px;
     margin-top: 15px;
   }
@@ -31,8 +29,8 @@ body {
     gap: 2rem;
     margin: 0;
     padding: 0;
-    position: relative; /* Ensures it's layered above waves */
-    z-index: 10; /* Place above waves */
+    position: relative;
+    z-index: 10;
 
     li a {
       color: #ffffff;
@@ -48,31 +46,29 @@ body {
     }
   }
 
-  /* Wave backgrounds */
   .wave-layer {
     position: absolute;
     width: 100%;
   }
 
   .wave1 {
-    top: 0; /* Wave.png on top */
-    z-index: 3; /* Topmost wave */
+    top: 0;
+    z-index: 3;
   }
 
   .wave2 {
-    top: 50px; /* Slightly below wave1 */
-    z-index: 2; /* Middle wave */
+    top: 50px;
+    z-index: 2;
   }
 
   .wave3 {
-    top: 60px; /* Slightly below wave2 */
-    z-index: 1; /* Bottom wave */
+    top: 60px;
+    z-index: 1;
   }
 }
 
-// Hero Section
 .hero {
-  position: relative; /* Ensure proper stacking for z-index */
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,21 +109,21 @@ body {
   }
 
   .hero-right img {
-    position: absolute; /* Allow free placement */
-    right: 12rem; /* Position image closer to the right */
-    top: 35%; /* Align vertically to the middle */
-    transform: translateY(-50%); /* Center vertically with transform */
-    width: 125%; /* Maintain scaling */
-    max-width: 600px; /* Prevent excessive scaling */
-    border-radius: 10px; /* Keep rounded corners */
-    z-index: -1; /* Move behind the hero-bottom */
+    position: absolute;
+    right: 12rem;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 125%;
+    max-width: 600px;
+    border-radius: 10px;
+    z-index: -1;
   }
 
   .hero-bottom {
     font-family: "gelato-fresco-variable", sans-serif;
     background: #193e6d;
     color: #ffffff;
-    font-size: 80px; /* Scaled down */
+    font-size: 80px;
     padding: 1rem 1rem;
     border-radius: 65px;
     text-align: center;
@@ -140,7 +136,6 @@ body {
   }
 }
 
-// Toolbox
 .toolbox {
   padding: 4rem 2rem;
   text-align: center;
@@ -160,12 +155,12 @@ body {
     margin: 2rem auto;
     max-width: 900px;
     padding: 2rem;
-    border: 12px solid #ffffff; /* Border around all icons */
-    border-radius: 66px; /* Rounded border */
+    border: 12px solid #ffffff;
+    border-radius: 66px;
   }
 
   img {
-    width: 150px; /* Smaller icons */
+    width: 150px;
     height: 150px;
     transition: transform 0.3s ease;
 
@@ -175,12 +170,11 @@ body {
   }
 }
 
-//GET STARTED
 .get-started {
   text-align: center;
   font-family: aglet-mono, mono;
-  margin: 0; /* Remove any margin */
-  position: relative; /* Ensures it spans correctly across the viewport */
+  margin: 0;
+  position: relative;
 
   .get-started-title {
     margin: 0;
@@ -194,14 +188,14 @@ body {
 
     .highlight {
       display: block;
-      font-size: 140px; /* Slightly decreased "STARTED" */
+      font-size: 140px;
       color: #ffffff;
     }
   }
 
   .connect-button {
     display: inline-block;
-    margin: 3rem auto 6rem; /* Adjust spacing between sections */
+    margin: 3rem auto 6rem;
     padding: 2rem 2rem;
     font-size: 72.13px;
     width: 50vw;
@@ -246,7 +240,7 @@ body {
 }
 
 .toc-button {
-  background-color: #003366; /* Navy blue */
+  background-color: #003366;
   color: white;
   font-family: aglet-mono, mono;
   font-size: 1.2rem;
@@ -264,7 +258,7 @@ body {
 .toc-button:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-  background-color: #004080; /* Lighter blue for hover */
+  background-color: #004080;
 }
 
 .casestudytext {
@@ -287,7 +281,7 @@ body {
   display: grid;
   grid-template-rows: auto auto auto auto;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0; /* Removes gaps between images */
+  gap: 0;
   margin: 15px auto;
   padding: 4rem;
 
@@ -296,21 +290,20 @@ body {
   }
 
   .image-container {
-    margin: 0; /* Removes any default margin */
-    padding: 0; /* Removes any default padding */
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     padding: 1rem;
 
     img {
       width: 100%;
-      height: auto; /* Keeps images responsive */
+      height: auto;
       display: block;
     }
   }
 
-  /* Specific adjustments */
   .middle1 {
-    grid-column: 1 / -1; /* Spans the entire width of the grid */
+    grid-column: 1 / -1;
   }
 }
 
@@ -379,38 +372,34 @@ body {
   }
 }
 
-// Footer
 footer {
   position: relative;
   text-align: center;
   padding: 4rem 0;
   font-family: aglet-mono, mono;
 
-  /* Black background div */
   .footer-bg {
     position: absolute;
-    top: 80px; /* Shift the black background down */
+    top: 80px;
     left: 0;
     width: 100%;
-    height: calc(100% - 80px); /* Ensures the black background fills below the wave */
+    height: calc(100% - 80px);
     background-color: #193e6d;
-    z-index: -2; /* Ensure it's behind the wave-footer */
+    z-index: -2;
   }
 
-  /* Wave footer */
   .wave-footer {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 120px; /* Position wave correctly */
+    bottom: 120px;
     transform: scaleY(-1) scaleX(-1);
-    z-index: -1; /* Keep it above the black background */
+    z-index: -1;
   }
 
-  /* Social media icons */
   .social-media {
-    position: relative; /* Keeps icons on top */
-    z-index: 1; /* Ensures visibility above wave */
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -426,10 +415,9 @@ footer {
     }
   }
 
-  /* Copyright text */
   p {
-    position: relative; /* Keeps text on top */
-    z-index: 1; /* Ensures visibility above wave */
+    position: relative;
+    z-index: 1;
     margin-top: 1rem;
     color: #ffffff;
 
